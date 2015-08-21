@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html class="dgm-site">
+  <head>
+    <title>Funcionalidad de la API</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="En datos.gob.mx puedes descargar y utilizar libremente datos abiertos que el Gobierno de la República genera y recolecta.
+">
+    <meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@DatosGobMx" />
+
+
+  <meta content="Funcionalidad de la API" property="og:title">
+  <meta name="twitter:title" content="Funcionalidad de la API" />
+
+
+
+  <meta content="article" property="og:type">
+
+
+
+  <meta content="En datos.gob.mx puedes descargar y utilizar libremente datos abiertos que el Gobierno de la República genera y recolecta.
+" property="og:description">
+  <meta name="twitter:description" content="En datos.gob.mx puedes descargar y utilizar libremente datos abiertos que el Gobierno de la República genera y recolecta.
+" />
+
+
+
+  <meta content="http://docs.factus.pe/docs/functionality.html" property="og:url">
+  <meta name="twitter:url" content="http://docs.factus.pe/docs/functionality.html" />
+
+
+
+  <meta content="2015-04-20T00:00:00-05:00" property="article:published_time">
+  <meta content="http://docs.factus.pe/about/" property="article:author">
+
+
+
+  <meta content="http://docs.factus.pe/assets/images/datos-image.jpeg" property="og:image">
+  <meta name="twitter:image" content="http://docs.factus.pe/assets/images/datos-image.jpeg" />
+
+
+
+  
+    <meta content="starting" property="article:section">
+  
+
+
+
+  
+
+
+
+
+    <link rel="shortcut icon" href="/assets/images/bg/favicon.png">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css">
+    <link rel="canonical" href="http://docs.factus.pe/docs/functionality.html"/>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script src="/assets/js/vendor/jquery.js" type="text/javascript"></script>
+    <script src="/assets/js/vendor/underscore.js" type="text/javascript"></script>
+    <script src="/assets/js/vendor/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="/assets/js/vendor/tap.js" type="text/javascript"></script>
+    <script src="/assets/js/vendor/moment.js" type="text/javascript"></script>
+    <script src="/assets/js/vendor/moment.locale.es.js" type="text/javascript"></script>
+    <script src="/assets/js/application.js" type="text/javascript"></script>
+    <script src="/assets/js/search-data.js" type="text/javascript"></script>
+    <script src="/assets/js/subscribe.js" type="text/javascript"></script>
+    <script src="/assets/js/sharer.js" type="text/javascript"></script>
+    <script src="/assets/js/skip-content.js" type="text/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+  <body>
+    <a class="skiplink" href="#main-content" title="Saltar al contenido principal">Saltar al contenido principal</a>
+<div class="site-header">
+  <section class="site-header-top hidden" tabindex="-1" role="presentation">
+    <div class="main-container">
+      <div class="cols-12">
+        <div class="col col-12">
+          <div class="col-inner">
+            <a href="http://presidencia.gob.mx/" title="Ir al sitio de la Presidencia de la República Mexicana" target="_blank" aria-hidden="true" tabindex="-1">
+              <i class="i presidencia" role="presentation"></i>
+            </a>
+            <div class="social-links">
+              <ul>
+                <li>
+                  <a tabindex="-1" aria-hidden="true" class="custom-share-button" href="https://twitter.com/DatosGobMx" data-title-share="http://twitter.com/share?url=http://datos.gob.mx/&amp;text=Descarga y utiliza libremente datos abiertos que el Gobierno de la República genera y recolecta. @GobRep @DatosGobMx" title="Twitter" target="_blank">
+                    <i class="i twitter-gray"></i>
+                  </a>
+                </li>
+                <li>
+                  <a tabindex="-1" aria-hidden="true" class="custom-share-button" href="#" data-title-share="https://www.facebook.com/sharer/sharer.php?u=http://datos.gob.mx/" title="Facebook">
+                    <i class="i fb-gray"></i>
+                  </a>
+                </li>
+                <li>
+                  <a tabindex="-1" aria-hidden="true" href="https://github.com/mxabierto/dgm" title="Repositorio GitHub" target="_blank">
+                    <i class="i octocat-gray"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <header class="site-header-bottom" role="banner" aria-label="Encabezado del sitio">
+    <div class="main-container">
+      <div class="cols-12">
+        <div class="col col-12">
+          <div class="col-inner">
+            <a href="http://pijamasurf.com/"><img class="top-logo" src="/assets/images/logo.png"></a>
+            <div class="nav-burguer" aria-hidden="true"><span></span></div>
+            <ul class="site-navigation" aria-label="Navegación principal" role="navigation">
+              
+              
+                
+                  <li>
+                    <a class="page-link" href="/docs/" aria-label="">Documentación</a>
+                  </li>
+                
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+    <main id="main-content" tabindex="-1" role="main" aria-label="Contenido principal">
+      <section>
+  <div class="main-container">
+    <div class="col-lg-12 cleaning">
+      <div class="col-lg-3 col-sm-4 col-md-3 cleaning" id="sidebar-wrapper">
+        <div class="col-inner sidebar bkg">
+          <div class="page-sidebar">
+  <div class="page-info">
+    <h1>
+      <p class="page-filters-title">Documentaci&oacute;n Factus</p>
+    </h1>
+    <div>
+      <input aria-labelledby="label-search-data" class="label-search" type="text" placeholder="Buscar"/>
+    </div>
+    <div>
+      <a class="btn-factus btn" href="paso-1" title="Descarga Factus">Descargar</a>
+      <p>Para Windows</p>
+    </div>
+  </div>
+  <ul class="page-filters" role="presentation" aria-hidden="true">
+    <li class="page-filters-title">Comencemos</li>
+      <li>
+        <a href="/docs" class="category-inner" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Como funciona
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/docs/functionality.html" class="category-inner functionality" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Funcionalidad de la API
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/installation.html" class="category-inner installation" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Instalación
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/user_guide.html" class="category-inner user-guide" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Guía de usuario
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/videos/" class="category-inner" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Videos
+        </a>
+      </li>
+  </ul>
+  <ul class="page-filters" role="presentation" aria-hidden="true">
+    <li class="page-filters-title">Aplicaciones Desktop</li>
+    
+    
+    
+      <li>
+        <a href="/docs/desktop_excel.html" class="category-inner desktop_excel" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Excel
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_vf.html" class="category-inner desktop_vf" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Visual Fox
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_delphi.html" class="category-inner desktop_vf" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Delphi
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_vb.html" class="category-inner desktop_vb" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Visual Basic
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_csharp.html" class="category-inner desktop_csharp" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          C#
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_pb.html" class="category-inner desktop_pb" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          PowerBuilder
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/desktop_java.html" class="category-inner desktop_java" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Java
+        </a>
+      </li>
+    
+  </ul>
+  <ul class="page-filters" role="presentation" aria-hidden="true">
+    <li class="page-filters-title">Aplicaciones Web</li>
+    
+    
+    
+      <li>
+        <a href="/docs/web_php.html" class="category-inner web_php" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Php
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/web_js.html" class="category-inner web_js" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          JavaScript
+        </a>
+      </li>
+    
+      <li>
+        <a href="/docs/web_java.html" class="category-inner web_java" aria-hidden="true" tabindex="-1">
+          <img src="/assets/images/arrow.png"/>
+          Java
+        </a>
+      </li>
+    
+  </ul>
+</div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-sm-8 col-md-9 sidebar" id="page-content-wrapper">
+        <div class="col-inner col-box">
+        <h1 class="down">Funcionalidad de la API</h1>
+
+<p>Factus API Desktop para aplicaciones Desktop, es una librería desarrollada en C++ (COM) para sistemas operativos Windows de 32 y 64 bits. Esta disponible para Windows XP, Windows Vista, Windows 7, Windows 8 y Windows 8.1 en 32 y 64 bits.</p>
+
+<h2><center>Gráfico de clases</center></h2>
+<p><img src="/assets/images/diagrama.png" alt="" />
+<br /><br />
+Factus expone los siguientes objetos:</p>
+
+<p><strong>Comprobante</strong>, es el objeto principal que contiene la información del comprobante electrónico(Boletas, Facturas, Notas de Crédito y Notas de Débito), contiene información de cabecera, participantes, totales y objetos como Items, Impuestos, Documentos de Referencia, Montos Adicionales, Propiedades Adicionales y Atributos personalizados.</p>
+
+<p><strong>Participante</strong>, es el objeto que es usado para identificar al emisor y cliente(Receptor), este objeto no necesita ser inicializado y se usa de la siguiente forma: <em>comprobante.Emisor.TipoIdentidad = “6”</em> y <em>comprobante.Cliente.TipoIdentidad = “6”</em>. Contiene datos obligatorios y opcionales.</p>
+
+<ul class="distancia">
+<li>Item,</li> 
+<li>Impuesto,</li>
+<li>DescuentoCargo,</li>
+<li>MontoAdicional,</li>
+<li>PropiedadAdicional,</li>
+<li>DocumentoReferencia,</li>
+</ul>
+<p><br /></p>
+
+<p><strong>Respuesta</strong>, este objeto es devuelto al invocar al método <em>Generar()</em>, contiene información como resultado de la generación del comprobante electrónico, cuando el código de error es cero, la generación fue correcta en caso contrario indica el error y mensaje de error. Por otro lado devuelve información sobre la ubicación del archivo XML generado, la firma, el hash y la imagen del código de barra.</p>
+
+<p>A continuación mostramos un ejemplo en sintaxis C#, una factura con 1 item en el que registramos la glosa de monto en letras y la base imponible según especificación de la SUNAT.</p>
+
+<p>Para utilizar <strong>Factus COM</strong> el primer paso es instanciar la clase principal Comprobante(Hay ejemplos para otros lenguajes):</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Factus.Comprobante c = new Factus.Comprobante();
+ </pre>
+
+<hr />
+
+<p>Identificamos los datos básicos del comprobante como el <strong><em>tipo de comprobante</em></strong>, en nuestro ejemplo al ser Factura se colocará “01”. (<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf"><em>Según Documentación SUNAT – Tipos de documento</em></a>) <br />
+El campo <strong><em>serie correlativo</em></strong> es el número asignado por el Emisor, este campo es el identificador único del comprobante. <br />
+Colocamos también la <strong><em>fecha de emisión</em></strong> del comprobante en formato YYYY-MM-DD. <br />
+Registramos el <strong><em>tipo de moneda</em></strong> del comprobante.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.TipoComprobante = “01”;
+            c.SerieCorrelativo = “F001-101”; 
+            c.FechaEmision = “2015/01/01”; 
+            c.TipoMoneda = "PEN"; 
+ </pre>
+
+<hr />
+
+<p>Lo siguiente que haremos, es instanciar la clase <strong>Participante</strong>, ya que aquí colocaremos los datos tanto del Emisor como del Cliente.</p>
+
+<p>Colocamos el numero del <strong><em>tipo de documento del Emisor</em></strong>, según Documentación SUNAT (<em>Catalogo Nro.6</em>).(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver Documentación SUNAT</a>)</p>
+
+<p><strong>Procedemos a llenar los demás campos del Emisor:</strong></p>
+
+<li><i>Numero identidad emisor:</i> Numero de identidad del emisor del Comprobante.</li>
+
+<li><i>Nombre Comercial Emisor:</i> Nombre comercial del emisor del Comprobante.</li>
+
+<li><i>Razon Social Emisor:</i> Razón social del emisor del Comprobante.</li>
+
+<li><i>Ubigeo Emisor:</i> Código del UBIGEO del emisor del Comprobante.</li>
+<p>(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Según Catalogo Nro.13 Documentación SUNAT.</a>)
+(<a href="http://www.indeci.gob.pe/oit/cua_ubigeo.pdf"><em>Ver relación de UBIGEO para Lima</em></a>)</p>
+
+<li><i>País Emisor:</i> Código del País del emisor del Comprobante.</li>
+
+<li><i>Departamento Emisor:</i> Departamento del emisor del Comprobante.</li>
+
+<li><i>Provincia Emisor:</i> Provincia del emisor del Comprobante.</li>
+
+<li><i>Distrito Emisor:</i> Distrito del emisor del Comprobante.</li>
+
+<li><i>Dirección Emisor:</i> Dirección detallada del emisor del Comprobante.</li>
+<p><br /></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.Emisor.TipoIdentidad = “6”;
+            c.Emisor.NumeroIdentidad = “20543314529”;
+            c.Emisor.NombreComercial = “ComplexLess”;
+            c.Emisor.RazonSocial = “ComplexLess S.A.C.”;
+            c.Emisor.Ubigeo =  "150141”;
+            c.Emisor.Pais = "PE";
+            c.Emisor.Departamento = "Lima”;
+            c.Emisor.Provincia = “Lima”;
+            c.Emisor.Distrito = “Surquillo”;
+            c.Emisor.Direccion = “Av. Aramburu 856 Of. 302”;
+ </pre>
+
+<hr />
+
+<p>Ya habiendo registrado los datos del emisor, instanciamos la clase <strong>Participante</strong> nuevamente, para poder registrar los datos del Cliente.</p>
+
+<p>Colocamos el numero del <strong><em>tipo de documento del Cliente</em></strong>, en este caso para el Documento Nacional de Identidad (DNI), se colocará <em>“1”</em> (<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Según Catalogo Nro.6 Documentación SUNAT</a>)</p>
+
+<p><br /><strong>Procedemos a llenar los demás campos del Cliente:</strong></p>
+
+<ul class="distancia">
+<li><i>Numero identidad cliente:</i> Numero de identidad del cliente.</li>
+
+<li><i>Razón Social cliente:</i> Razón Social del cliente.</li>
+
+<li><i>País cliente:</i> Código del país del cliente.</li>
+
+<li><i>Distrito cliente:</i> Distrito del cliente.</li>
+
+<li><i>Dirección cliente:</i> Dirección detallada del cliente.</li>
+</ul>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.Cliente.Tipoidentidad = "1"; 
+            c.Cliente.NumeroIdentidad = “09574547”;
+            c.Cliente.RazonSocial = "SUNAT";
+            c.Cliente.Pais = "PE";
+            c.Cliente.Distrito = "San Isidro";
+            c.Cliente.Direccion = "Av los Sauces 321 Lince";
+  </pre>
+
+<hr />
+
+<p>Luego de haber registrado al Emisor y al Cliente, procedemos a registrar los campos de los Items.
+Como se sabe, una Factura puede contener varios items, para este ejemplo solo añadiremos un item.</p>
+
+<p>Para esto, procedemos a instanciar la clase Item.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Factus.Item it = c.NuevoItem(); 
+ </pre>
+
+<p>En este caso el campo <em><strong>id</strong></em> se registra de manera correlativa de acuerdo al numero de ítems que posea el comprobante.</p>
+
+<p>Como en el caso anterior, completamos los campos del item: Cantidad, Descripción, Código del Producto, Precio Unitario, Base Imponible, Tipo precio e Impuesto Total de cada Ítem.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+          
+            it.Id = “1”;
+            it.Cantidad = 10;
+            it.Descripcion = ”Televisor LG Full HD “;
+            it.CodigoProducto = "10234";
+            it.PrecioUnitario = 11.80;
+            it.BaseImponible = 118.00
+            it.TipoPrecio = "01";
+            it.TotalImpuesto = ”18.00”;
+ </pre>
+
+<p>Antes de que vayamos a agregar el <em>item</em> a nuestra Factura, tenemos que tener en cuenta que cada <em><strong>Item</strong></em>, posee un <em><strong>impuesto</strong></em>, asi que:</p>
+
+<p><em><strong>Instaciaremos la clase Impuesto:</strong></em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Factus.Impuesto imp = it.NuevoImpuesto();
+ </pre>
+
+<p>Procedemos a registrar los campos del impuesto por item, en este caso supongamos que el item tenga como tipo de impuesto a “IGV”. En este caso como es “IGV” se registra el campo <strong>Id = “VAT”</strong> , el campo <strong>Nombre_ = “IGV”</strong> y para este caso <strong>SunatId = “1000”</strong>.(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver Catalogo Nro. 5 SUNAT para mayor información</a>).<br />
+Hay que tener en cuenta de que un <em>item</em> puede poseer varios <em>impuestos</em>, pero en este caso añadiremos un impuesto como ejemplo:</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            imp.Id = “VAT”;
+            imp.Nombre = “IGV”;
+            imp.SunatId = “1000”;
+            imp.BaseImponible = 100.00;
+            imp.TotalImpuesto = 18.00;
+            imp.Porcentaje = 18;
+ </pre>
+
+<p><em>Después de haber registrado los campos agregamos el impuesto del ítem asi:</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            it.AgregarImpuesto(imp);
+ </pre>
+
+<hr />
+
+<p>Cada Item tendrá un Descuento o un Cargo adicional en la Factura, aquí también cada item puede poseer varios <em>cargos</em> o <em>descuentos</em> según se decida aplicar, entonces:</p>
+
+<p><br />
+<em><strong>Procedemos a instanciar la clase DescuentosCargos:</strong></em>
+<br /></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Factus.DescuentoCargo desCarIt = it.NuevoDescuentoCargo();
+ </pre>
+
+<p>Y registramos los campos, donde:<br />
+<em><strong>IdCd</strong></em> es el identificador de los descuentos o cargos según se registre en el comprobante.<br />
+<em><strong>MontoCd</strong></em> es el monto de los descuentos o cargos según sea el caso.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            desCarIt.IdCd = 1;  /* Para Cargos: id = 1, y para Descuentos: id = 2 */
+            desCarIt.MontoCd= 180.20;
+ </pre>
+<p><br /></p>
+
+<p><em>Agregamos el descuento o cargo del ítem:</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            it.AgregarDescuentoCargo(desCarIt);
+ </pre>
+<p><br /></p>
+
+<p><em>Finalmente procedemos a agregar este Ítem con el impuesto y Descuento o cargo del mismo.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.AgregaItem ( it );
+ </pre>
+
+<hr />
+<p><br /></p>
+
+<p>Una vez registrado los impuestos  de cada Ítem , se sabe que tambien existe un impuesto a nivel general en la factura, para esto vamos a registrar el Impuesto General.<br />
+Debemos recordar que pueden existir tambien varios impuestos a nivel general en la Factura, para este ejemplo añadiremos uno sólo.</p>
+
+<p><em><strong>Instanciamos la clase Impuesto (Impuesto General)</strong></em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Comprobante.Impuesto impG = new Comprobante.Impuesto();
+ </pre>
+
+<p><br />
+Y registramos los campos, donde:<br />
+Como en el ejemplo se calcularon los items con “IGV” entonces, se registra el campo <strong>Id = “VAT”</strong>, el campo <strong>Nombre = “IGV”</strong> y <strong>SunatId = “1000”</strong>.(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver Catalogo Nro. 5 SUNAT para mayor información</a>).<br />
+El campo <strong>TotalImpuesto</strong> es la suma de los impuestos individuales de cada Ítem.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            impG.Id = ”VAT”;
+            impG.SunatId = ”1000”;
+            impG.Nombre = ”IGV”;
+            impG.TotalImpuesto = 72.0;
+ </pre>
+
+<p><em>Agregamos el impuesto general de la factura.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.AgregarImpuesto ( impG );
+ </pre>
+
+<hr />
+
+<p><br />
+Al igual que los impuestos, también existen los Descuentos/Cargos a nivel general en la factura.
+(Pueden existir varios <em>descuentos</em> o <em>cargos</em> en la factura a nivel general).</p>
+
+<p><em><strong>Instanciamos la clase DescuentosCargos</strong></em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            Comprobante.DescuentosCargos desCarG = new Comprobante.DescuentosCargos();                                                            </pre>
+
+<p><br /></p>
+
+<p>Y registramos los campos, donde:<br />
+<em><strong>IdCd</strong></em> es el identificador de los descuentos o cargos según se registre en el comprobante.<br />
+<em><strong>MontoCd</strong></em> es el monto de los descuentos o cargos según sea el caso.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            desCarG.IdCd = 2;         /*  Para Cargos: id = 1, y paraDescuentos: id = 2  */
+            desCarG.MontoCd= 202.30;
+ </pre>
+
+<p><em>Y se procede a agregar el descuento o cargo general en el Comprobante.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.AgregarDescuento ( desCarG );
+ </pre>
+
+<hr />
+
+<p><br /><br />
+<em><strong>A continuación instanciamos la clase Monto adicional</strong></em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+             Comprobante.MontoAdicional monto = new Comprobante.MontoAdicional();
+ </pre>
+
+<p>Y registramos los campos:</p>
+
+<p>MontoAdicional tiene como campos a <em>ID</em>, en este caso se coloca el <strong>Id = “1001”</strong> que es el identificador para el <em>Total valor de venta por Operación Gravada con el IGV</em>(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver catalogo Nro. 14 Documentación SUNAT</a>).<br />
+Y luego se procede a colocar el <strong>Nombre</strong> del monto adicional, <strong>Monto Referencial</strong>, <strong>Importe total</strong>, <strong>Porcentaje</strong> y <strong>Monto total</strong>.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+             monto.ID =  “1001”;
+             monto.Nombre = “Monto adicional 1 ”;
+             monto.MontoReferencial =  20.00;
+             monto.ImporteTotal =  18.00;
+             monto.Porcentaje = 18.00;
+             monto.MontoTotal =  100.00; 
+ </pre>
+
+<p><br /></p>
+
+<p><em>Al completar los campos, se procede a registrar el Monto Adicional al comprobante.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+            c.AgregarMontoAdicional ( monto );
+ </pre>
+
+<hr />
+
+<p><br /><br /></p>
+
+<p><em><strong>Instanciamos la clase PropiedadAdicional</strong></em><br />
+(Donde puede registrarse informacion de cualquier tipo).</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+             Comprobante.PropiedadAdicional propiedad = new Comprobante.PropiedadAdicional();                               </pre>
+
+<p>Y registramos los campos:</p>
+
+<p>La clase PropiedadAdicional tiene como campos a <em>ID</em> , <em>Nombre</em> y <em>Valor.</em><br />
+En este ejemplo se coloca en <strong>ID = “9999”</strong> que concierne a “Otros”. (<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Según Documentación SUNAT</a>), luego se coloca el <strong>Nombre</strong>  y el <strong>Valor</strong> del concepto adicional.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+             propiedad.ID = “9999”;
+             propiedad.Nombre  = “Propiedad Adicional 1”;
+             propiedad.Valor = “Valor de propiedad adicional”;
+  </pre>
+
+<p><em>Registramos la propiedad adicional en el comprobante.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+              c.AgregarPropiedadAdicional ( propiedad );
+ </pre>
+
+<hr />
+
+<p><br /><br />
+<em><strong>Instanciamos la clase DocumentoReferencia</strong></em><br />
+(Podemos añadir un documento de referencia a nuestra factura, por ejemplo, una Guía de Remisión).</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+          Comprobante.DocumentoReferencia documento = new Comprobante.DocumentoReferencia();
+ </pre>
+
+<p>Y registramos los campos, donde:<br />
+<strong>Id</strong> es el numero del documento de referencia.<br />
+<strong>TipoDocumento</strong> es el código del tipo de documento de referencia.(<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver catalogo Nro. 01 Documentación SUNAT</a>).<br />
+<strong>Fecha</strong> es la fecha del documento de referencia.<br />
+<strong>DescripcionTipoDocumento</strong> es la descripción del documento que se esta añadiendo como referencia.</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+              documento.Id = "0044423"
+              documento.Fecha = "2015/03/10"
+              documento.TipoDocumento = "09"
+              documento.DescripcionTipoDocumento = "Guía de remisión"
+ </pre>
+
+<p><br />
+ <em>Agregamos el documento de referencia a la factura</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+             c.AgregarDocumentoReferencia( documento );
+ </pre>
+
+<hr />
+
+<p><br /><br />
+Ya registrado los campos anteriores mencionados, se procede a registrar las cantidades totales de la factura como muestra a continuacion:</p>
+
+<p><br /></p>
+<li>Total Cargos:</li>
+<p>Importe total de cargos aplicados al total de la factura.
+<?prettify lang=C#?></p>
+<pre class="prettyprint">
+
+            c.TotalCargos = "130.50"; 
+  </pre>
+
+<li>Total Descuento:</li>
+<p>Total de los descuentos aplicados al total de la factura
+<?prettify lang=C#?></p>
+<pre class="prettyprint">
+
+            c.TotalDescuento = "34.20"; 
+  </pre>
+
+<li>Total Impuesto:</li>
+<p>Importe total de los impuestos aplicados en la factura
+<?prettify lang=C#?></p>
+<pre class="prettyprint">
+
+            c.TotalImpuesto = "34.20"; 
+  </pre>
+
+<li>Importe Total:</li>
+<p>Importe total a pagar 
+<?prettify lang=C#?></p>
+<pre class="prettyprint">
+
+            c.ImporteTotal = "3024.20"; 
+  </pre>
+<p><br /><br /></p>
+
+<hr />
+
+<p>Podemos agregar a nuestra factura otros atributos de tipo monetario, entonces:</p>
+
+<p><em><strong>Invocamos al método Otro Atributo</strong></em></p>
+
+<p>El método AgregarOtroAtributo tiene como parámetros el ID = “1000” (<a href="https://s3.amazonaws.com/insc/Libros+y+Registros+Electronicos/Anexos+RS+199_2014/Nuevo+Anexo+8+-+Cat%C3%A1logos.pdf">Ver catalogo Nro. 15 Documentación SUNAT</a>), y el Valor, en este caso la Glosa expresado en letras el monto total de la Factura.
+(Tengamos en cuenta que en este método pueden agregarse varios atributos)</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+              c.AgregarOtroAtributo ( “1000” ,  
+                                      “TRES MIL VEINTE Y CUATRO CON 20/100 NUEVOS SOLES”);
+ </pre>
+
+<hr />
+
+<p><br /><br /></p>
+
+<p>Después de haber terminado con la asignación de valores de los campos de la Factura se usará el método <em>Generar</em>.</p>
+
+<p><em><strong>Para esto, instanciamos la clase Respuesta</strong></em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+              Respuesta r;      
+ </pre>
+
+<p>Este método genera el comprobante y lo devuelve en un objeto tipo Respuesta.</p>
+
+<p><em>Llamamos al método Generar.</em></p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+              r = c.Generar();
+ </pre>
+
+<p><br /></p>
+
+<p>El objeto <strong>Respuesta</strong> contiene los siguientes atributos:</p>
+
+<ul class="distancia">
+<li>CodigoError</li>
+<li>MensajeError</li>
+<li>ArchivoPDF417</li>
+<li>ArchivoXML</li>
+<li>Hash</li>
+<li>ResultadoFirma</li>
+</ul>
+
+<p><br />
+Esto puede ser utilizado de la siguiente forma:</p>
+
+<?prettify lang=C#?>
+<pre class="prettyprint">
+
+        If (r.CodigoError = 0 ) 
+            MessageBox.Show(r.ArchivoPDF417)      /* Muestra ruta del PDF471 */
+            MessageBox.Show(r.ArchivoXML)         /* Muestra ruta del XML */
+            MessageBox.Show(r.Hash)                 /* Muestra valor del Hash */
+            MessageBox.Show(r.ResultadoFirma)     /* Muestra valor de la Firma */
+
+        Else
+            MsgMessageBox.Show(r.MensajeError) /* Muestra mensaje en caso de presentar un error */
+              
+        End If
+ </pre>
+
+<p><em><strong>En este ejemplo evaluamos:</strong></em><br />
+Si CodigoError es igual a cero, quiere decir que <strong>no hay error</strong> por lo tanto el atributo <em>MensajeError</em> vendrá vacío, pero los otros atributos tendrán valores como se describe a continuación:</p>
+
+<p><br /></p>
+<li>Archivo PDF417:</li>
+<p>Devuelve una cadena de caracteres, que indica la ruta donde se guardó el <em>archivo PDF417</em> como imagen en formato PNG (La ruta siempre será la que tenga mayor permiso para escritura, por defecto será el directorio Documentos).</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<?prettify lang=C++?>
+<center>
+<pre class="prettyprint">
+  
+C:\Users\Admin\Documents\20543314529_01_F001-101.PNG
+ </pre>
+</center>
+
+<p>Este atributo es el más importante, ya que nos entrega la ruta de la <em>imagen en formato PNG</em> que debemos agregar a la representación impresa del comprobante como se muestra en la siguiente imagen de ejemplo:</p>
+
+<center><img src="/assets/images/ticket1.png" alt="" /></center>
+
+<p><br /></p>
+<li>Archivo XML:</li>
+<p>Devuelve una cadena de caracteres, que indica la ruta donde se guardó el <em>archivo XML</em> que tendrá de acuerdo a la especificación de la SUNAT.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<?prettify lang=java?>
+<pre class="prettyprint">
+
+            C:\Users\Admin\Documents\20543314529_01_F001-101.XML
+ </pre>
+
+<p><br /></p>
+<li>Hash:</li>
+<p>Devuelve el valor de la cadena resumen calculado del archivo XML en una cadena de caracteres. Según la especificación de la SUNAT este valor se puede imprimir en la representación impresa del comprobante en vez de utilizar la imagen PDF417.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<?prettify lang=C#?>
+<center>
+<pre class="prettyprint">
+
+oXaHY4FXt643ktMb2xEEmrFW5jA=
+ </pre>
+</center>
+
+<p><em><strong>Ejemplo de una representación impresa con Hash:</strong></em></p>
+
+<center><img src="/assets/images/ticket2.png" alt="" /></center>
+
+<p><br /></p>
+<li>Firma:</li>
+<p>Devuelve el valor de la <em>firma digital</em> calculada del archivo XML y utilizando el certificado digital asignado al emisor, en cadena de caracteres.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<?prettify lang=C#?>
+
+<pre class="prettyprint">
+
+              LsNuE0mHnAtQsx5h5ZdWSOnvo3MCtcYfnc34BNsmBj3h+19At3ib5xeGcHt
+              +ZT+Q4vZ/UGP9/fwFCMvtvpXu4zQMcYLIIqIkY4qTXGe/QBu5YG/1xZxCIQMc
+              4cIhPV0unWt/dKwz5Yp4PgjgNr0+eVxQ7LNVSLFwj1aQ9YA3xtIEE/8U6K2UYv
+              DI0HaKZelpnMjyoQn1l6u13+krt7226pwbjo4R/v/0x6wby5PVFrvsu88gEIXDoD
+              rX6u1p2rpCAva3E0mzWWYSJvoE8AM1a/KkGt0LcMQ5ZrqHvKOTxYtR/VLurZs
+              ylOZxJkWVTX3Y+oqp4jcdwgPsm1zK8DihQA==
+ </pre>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <section class="subscribe">
+  <div class="main-container">
+    <div class="col-lg-12">
+      <div class="col-lg-12">
+        <div class="col-inner">
+          <form action="//gob.us9.list-manage.com/subscribe/post-json?u=2128f25c973f219e1b51af623&amp;id=99ced13731&amp;c=?" method="get" id="mc-embedded-subscribe-form" role="form" novalidate>
+            <h4 style="color:#fff;" aria-hidden="true">¿Te interesa saber más sobre <strong>Factus</strong>?</h4>
+            <div class="input-button-wrap">
+              <div class="input-button">
+                <label class="hidden" id="subscribe-label" aria-hidden="true">Ingresa tu correo electrónico para recibir noticias sobre Factus</label>
+                <input type="email" name="EMAIL" placeholder="Correo electrónico" class="required email" id="mce-EMAIL" aria-labelledby="subscribe-label" required>
+                <button type="submit" aria-label="Enviar correo electrónico">
+                  <img  src="/assets/images/img-arrow.png">
+                </button>
+              </div>
+              <p class="message" aria-live="assertive" aria-atomic="true"></p>
+            </div>
+            <input class="hidden" type="text" name="b_2128f25c973f219e1b51af623_99ced13731" tabindex="-1" aria-hidden="true">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Pie de página del sitio">
+  <div class="main-container long left">
+    <div class="col-lg-12">
+      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
+       <div class="col-lg-4">
+       <img src="/assets/images/facebook.png">
+       </div>
+       <div class="col-lg-8 cleaning top">
+       <a href="#" class="footer-section-title">faccebook/factus</a>
+       </div>
+      </div>
+      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
+       <div class="col-lg-4">
+       <img src="/assets/images/twitter.png">
+       </div>
+       <div class="col-lg-8 cleaning top">
+       <a href="#" class="footer-section-title">twitter/factus</a>
+       </div>
+      </div>
+      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
+       <div class="col-lg-4">
+       <img src="/assets/images/github.png">
+       </div>
+       <div class="col-lg-8 cleaning top">
+       <a href="#" class="footer-section-title">github/factus</a>
+       </div>
+      </div>
+      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
+       <div class="col-lg-4">
+       <img src="/assets/images/factus.png">
+       </div>
+       <div class="col-lg-8 cleaning top">
+       <a href="#" class="footer-section-title">Factus</a>
+       </div>
+      </div>
+    </div>
+   </div> 
+</footer>
+ 
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44411606-15', 'auto');
+  ga('send', 'pageview');
+
+  function trackSearch(query) {
+    ga('send', 'event', 'landing', 'search', 'query', query);
+  };
+</script>
+
+
+    <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml : true,
+      version: 'v2.0'
+    });
+
+    FB.Event.subscribe('xfbml.render', function(response) {
+      addAriaHiddenAttrs( $('.social-buttons .fb iframe') );
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+    js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
+
+  twttr.ready(function(twttr) {
+    twttr.events.bind('loaded', function(event) {
+      addAriaHiddenAttrs( $(event.widgets[0]) );
+    });
+  });
+</script>
+
+
+  </body>
+</html>
