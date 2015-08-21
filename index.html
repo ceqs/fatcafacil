@@ -1,1 +1,37 @@
-My Page
+---
+layout: default
+title: factus.pe
+---
+<section class="stories-content">
+  <div class="main-container">
+    <div class="cols-12">
+      <div class="col col-3">
+        <div class="col-inner">
+          {% include tools-sidebar.html %}
+        </div>
+      </div>
+      <div class="col col-9">
+        <div class="col-inner">
+          <div class="entities-list-cards" role="list" aria-label="Historias con datos abiertos">
+            {% assign tools = site.posts | where:'indexpage', true %}
+            {% for post in tools %}
+              {% if forloop.first %}
+                <div class="col col-12" role="listitem">
+                  <div class="col-inner">
+                    {% include entity-card.html post=post size="lg" showAuthor=false showCategory=true %}
+                  </div>
+                </div>
+              {% else %}
+                <div class="col col-6" role="listitem">
+                  <div class="col-inner">
+                    {% include entity-card.html post=post showAuthor=false showCategory=true %}
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
