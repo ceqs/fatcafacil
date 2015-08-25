@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dgm-site">
+<html>
   <head>
     <title>Instalación</title>
 
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="/assets/images/bg/favicon.png">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="http://google-code-prettify.googlecode.com/svn/trunk/styles/sunburst.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="canonical" href="http://docs.factus.pe/docs/installation.html"/>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <script src="/assets/js/jquery-2.1.4.min.js" type="text/javascript"></script>
     <script src="http://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
     <script src="/assets/js/vendor/jquery.js" type="text/javascript"></script>
     <script src="/assets/js/vendor/underscore.js" type="text/javascript"></script>
@@ -114,17 +116,12 @@
       <div class="cols-12">
         <div class="col col-12">
           <div class="col-inner">
-            <a href="http://pijamasurf.com/"><img class="top-logo" src="/assets/images/logo.png"></a>
+            <a href="http://fatcafacil.com/"><img class="top-logo" src="/assets/images/logo.png"></a>
             <div class="nav-burguer" aria-hidden="true"><span></span></div>
             <ul class="site-navigation" aria-label="Navegación principal" role="navigation">
-              
-              
-                
-                  <li>
-                    <a class="page-link" href="/docs/" aria-label="">Documentación</a>
-                  </li>
-                
-              
+              <li>
+                <a class="page-link" href="/">Documentaci&oacute;n</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -138,213 +135,142 @@
     <div class="col-lg-12 cleaning">
       <div class="col-lg-3 col-sm-4 col-md-3 cleaning" id="sidebar-wrapper">
         <div class="col-inner sidebar bkg">
-          <div class="page-sidebar">
+          <div class="page-sidebar" style="border-bottom: 1px solid rgb(175, 190, 213);">
   <div class="page-info">
-    <h1>
-      <p class="page-filters-title">Documentaci&oacute;n Factus</p>
-    </h1>
-    <div>
-      <input aria-labelledby="label-search-data" class="label-search" type="text" placeholder="Buscar"/>
-    </div>
-    <div>
-      <a class="btn-factus btn" href="paso-1" title="Descarga Factus">Descargar</a>
-      <p>Para Windows</p>
-    </div>
   </div>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
     <li class="page-filters-title">Comencemos</li>
       <li>
-        <a href="/docs" class="category-inner" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Como funciona
+        <a href="/" class="category-inner" aria-hidden="true" tabindex="-1">
+        <img src="/assets/images/arrow.png"/> 
+        Como funciona
         </a>
       </li>
     
     
       <li>
-        <a href="/docs/functionality.html" class="category-inner functionality" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Funcionalidad de la API
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/installation.html" class="category-inner installation" aria-hidden="true" tabindex="-1">
+        <a href="/docs/installation.html" class="category-inner Installation" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
           Instalación
         </a>
       </li>
     
-      <li>
-        <a href="/docs/user_guide.html" class="category-inner user-guide" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Guía de usuario
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/videos/" class="category-inner" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Videos
-        </a>
-      </li>
+      
   </ul>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
-    <li class="page-filters-title">Aplicaciones Desktop</li>
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
+    <li class="page-filters-title">Configuración</li>
     
     
     
       <li>
-        <a href="/docs/desktop_excel.html" class="category-inner desktop_excel" aria-hidden="true" tabindex="-1">
+        <a href="/docs/configuración.html" class="category-inner Configuracion FatcaFácil" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          Excel
+          Configuración FatcaFácil
         </a>
       </li>
     
       <li>
-        <a href="/docs/desktop_vf.html" class="category-inner desktop_vf" aria-hidden="true" tabindex="-1">
+        <a href="/docs/entidades.html" class="category-inner Configuración de Entidades" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          Visual Fox
+          Configuración de Entidades
         </a>
       </li>
     
       <li>
-        <a href="/docs/desktop_delphi.html" class="category-inner desktop_vf" aria-hidden="true" tabindex="-1">
+        <a href="/docs/certificado.html" class="category-inner Configurar Certificado" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          Delphi
+          Configurar Certificado
         </a>
       </li>
     
       <li>
-        <a href="/docs/desktop_vb.html" class="category-inner desktop_vb" aria-hidden="true" tabindex="-1">
+        <a href="/docs/licencia.html" class="category-inner Configurar Licencia" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          Visual Basic
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/desktop_csharp.html" class="category-inner desktop_csharp" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          C#
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/desktop_pb.html" class="category-inner desktop_pb" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          PowerBuilder
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/desktop_java.html" class="category-inner desktop_java" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Java
+          Configurar Licencia
         </a>
       </li>
     
   </ul>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
-    <li class="page-filters-title">Aplicaciones Web</li>
+  </ul>
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
+    <li class="page-filters-title">Funcionalidades</li>
     
     
     
       <li>
-        <a href="/docs/web_php.html" class="category-inner web_php" aria-hidden="true" tabindex="-1">
+        <a href="/docs/archivo.html" class="category-inner Generar Archivo" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          Php
+          Generar Archivo
         </a>
       </li>
     
       <li>
-        <a href="/docs/web_js.html" class="category-inner web_js" aria-hidden="true" tabindex="-1">
+        <a href="/docs/excel.html" class="category-inner Plantilla Excel" aria-hidden="true" tabindex="-1">
           <img src="/assets/images/arrow.png"/>
-          JavaScript
-        </a>
-      </li>
-    
-      <li>
-        <a href="/docs/web_java.html" class="category-inner web_java" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Java
+          Plantilla Excel
         </a>
       </li>
     
   </ul>
 </div>
+<!--<script type="text/javascript">
+$('#nav li a').click(function() {
+  $('.active').removeClass('active');
+  $(this).addClass('active');
+});
+
+  $('#nav a').click(function(e){
+    e.preventDefault();
+    
+    if (!$(this).parents('a').hasClass('active')){
+      
+      $('#nav li a').removeClass('active');
+      $(this).parents('a').addClass('active');
+      
+    
+  };
+  
+});
+
+  $('#nav li a').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+});
+</script>-->
         </div>
       </div>
       <div class="col-lg-9 col-sm-8 col-md-9 sidebar" id="page-content-wrapper">
         <div class="col-inner col-box">
-        <h2 class="down">MANUAL INSTALACION FACTUS 1.1</h2>
+        <h1 class="down">Instalación FatcaFácil 1.5</h1>
 
-<p>Este manual guiará paso a paso para la instalación de <strong>FACTUS 1.1</strong> en su ordenador. Abrimos en ejecutable <strong>FASTUS1.1-installer.exe</strong> para iniciar la instalación.</p>
+<p>La instalacion es rápida y fácil , abrimos el ejecutable “FatcaFacil-1.5” 
+Nos aparecera la siguiente pantalla, damos clic en siguiente.</p>
 
 <div class="cleaning img-top code">
-	
+  <img src="/assets/images/01.png" />
 </div>
 
-<p>Al abrir el archivo nos muestra la siguiente pantalla de bienvenida</p>
+<p>Elegimos la ruta de la instalación de FatcaFacil (Se recomienda instalar en el directorio por defecto mostrado) , damos clic en siguiente para continuar.</p>
 
-<div class="cleaning img-top code"><h6 class="down">Pantalla de bienvenida</h6><img src="/assets/images/bienvenida.png" /></div>
+<div class="cleaning img-top code">
+  <img src="/assets/images/02.png" />
+</div>
 
-<p>Al dar click en siguiente nos mostrara el Contrato de Licencia. Si se está conforme, marcamos que aceptamos los términos y condiciones y damos click en siguiente.</p>
+<p>Clic en siguiente, esperamos a que termine de instalar y listo! , FatcaFacil ya esta instalado en su ordenador.</p>
 
-<div class="cleaning img-top code"><h6 class="down">Términos y condiciones</h6><img src="/assets/images/licencia.png" /></div>
+<div class="cleaning img-top code">
+  <img src="/assets/images/03.png" />
+</div>
 
-<p>Elegimos la ruta de la instalación (Se recomienda instalar en el directorio por defecto mostrado)</p>
-
-<div class="cleaning img-top code"><h6 class="down">Ruta de instalación</h6><img src="/assets/images/directorio.png" /></div>
-
-<p>Durante la instalación de <strong>FACTUS 1.1</strong>, el asistente le pedirá su aprobación para instalar Microsoft Visual C++ Redistributable Package (x86), esencial para el funcionamiento óptimo, Aceptamos y damos click en Siguiente y se instalaran los componentes.</p>
-
-<div class="cleaning img-top code"><h6 class="down">Requerimientos de Optimización</h6><img src="/assets/images/visual.png" /></div>
-
-<p>Le damos a finalizar y tenemos completada la instalación de <b>FACTUS 1.1</b></p>
-
-<div class="cleaning img-top code"><h6 class="down">Instalación terminada</h6><img src="/assets/images/listo.png" /></div>
-
-<p>Terminada la instalación,estos son los archivos de inicio:</p>
+<p>Terminada la instalacion estos son los archivos de inicio:</p>
 <ul class="distancia">
-<li><b>Configuración Factus:</b> Ejecutable de configuración <b>FACTUS 1.1</b></li>
-<li><b>Documentación Factus:</b> URL que le redirigirá a la Documentación</li>
-<li><b>Factus.pe:</b> Portal principal de FACTUS</li>
-<li><b>Guía de Usuario :</b> URL Factus con los documentos de ejemplos y/o Guías</li>
+<li><b>Documentacion Facta:</b> URL que lo redirigira a la documentación</li>
+<li><b>FatcaFácil:</b> Aplicativo FatcaFacil 1.5</li>
+<li><b>Uninstall FatcaFacil:</b> Desistalador del aplicativo</li>
 </ul>
-<p><br />
-Nos vamos al directorio donde se instaló <b>FACTUS 1.1</b>
-(El directorio por defecto es C:\Program Files\Factus-1.1)
-Como podemos ver se instaló en el directorio correctamente, procedemos a entrar a la carpeta</p>
 
-<p>Ingresando al directorio de la Instalación, podemos visualizar los archivos y directorios de <b>FACTUS 1.1</b></p>
+<div class="cleaning img-top code">
+</div>
 
-<p>A continuación describiremos los directorios y archivos que lo conforman:</p>
-
-<ul class="distancia">
-<li><b>Keystore:</b>En este directorio se colocan los certificados digitales</li>
-<li><b>Templates:</b>En este directorio se encuentran las plantillas de generación de los archivos XML en formato Velocity. Estos archivos pueden ser modificables</li>
-<li><b>Unistall Factus.exe :</b> Archivo ejecutable para la desinstalación de <b>FACTUS 1.1</b></li>
-<li><b>config.ini:</b> Este archivo contiene datos correspondientes al Emisor(Empresa que va a facturar)</li>
-</ul>
-<p><br />
-El formato del <b>config.ini</b> es el siguiente:</p>
-
-<ul class="distancia">
-<li><b>TipoDocumento:</b> Es el tipo de documento del Emisor/Empresa. Tipo de documento de
-  acuerdo a Documentación SUNAT</li>
-<li><b>NumeroDocumento:</b> Es el número de Documento del Emisor/Empresa, en este caso un R.U.C.</li>
-<li><b>NombreComercial:</b> Es el nombre comercial del Emisor/Empresa.</li>
-<li><b>RazonSocial:</b> Razón social del Emisor/Empresa.</li>
-<li><b>Ubigeo:</b> Código de Ubigeo del Emisor/Empresa.</li>
-<li><b>País:</b> País del Emisor/Empresa.</li>
-<li><b>Departamento:</b> Departamento del Emisor/Empresa.</li>
-<li><b>Provincia:</b> Provincia del Emisor/Empresa</li>
-<li><b>Distrito:</b> Distrito del Emisor/Empresa</li>
-<li><b>Dirección:</b> Dirección del Emisor/Empresa</li>
-<li><b>Certificado:</b> Aquí se colocan los datos de los Certificados Digitales: o FileKeyStore : Directorio del archivo de Certificación Digital o PasswordKeyStore: Contraseña del Certificado Digital
-  o AliasKey: Alias del Certificado Digital
-  o PasswordKey: Contraseña del Certificado. </li>
-</ul>
 
         </div>
       </div>
@@ -358,15 +284,15 @@ El formato del <b>config.ini</b> es el siguiente:</p>
       <div class="col-lg-12">
         <div class="col-inner">
           <form action="//gob.us9.list-manage.com/subscribe/post-json?u=2128f25c973f219e1b51af623&amp;id=99ced13731&amp;c=?" method="get" id="mc-embedded-subscribe-form" role="form" novalidate>
-            <h4 style="color:#fff;" aria-hidden="true">¿Te interesa saber más sobre <strong>Factus</strong>?</h4>
-            <div class="input-button-wrap">
+            <h4 style="color:#fff;font-size: 26px;" aria-hidden="true">¿Te interesa saber más sobre <strong>FatcaFácil</strong>?</h4><div class="input-button-wrap">
               <div class="input-button">
-                <label class="hidden" id="subscribe-label" aria-hidden="true">Ingresa tu correo electrónico para recibir noticias sobre Factus</label>
                 <input type="email" name="EMAIL" placeholder="Correo electrónico" class="required email" id="mce-EMAIL" aria-labelledby="subscribe-label" required>
                 <button type="submit" aria-label="Enviar correo electrónico">
                   <img  src="/assets/images/img-arrow.png">
                 </button>
               </div>
+              <div class="col-lg-12" style="color: #fff;
+margin-top: 10px;">Ingresa tu Email para recibir noticias sobre FatcaFácil</div>
               <p class="message" aria-live="assertive" aria-atomic="true"></p>
             </div>
             <input class="hidden" type="text" name="b_2128f25c973f219e1b51af623_99ced13731" tabindex="-1" aria-hidden="true">
@@ -379,40 +305,21 @@ El formato del <b>config.ini</b> es el siguiente:</p>
 
     <footer class="site-footer" role="contentinfo" aria-label="Pie de página del sitio">
   <div class="main-container long left">
-    <div class="col-lg-12">
-      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
-       <div class="col-lg-4">
-       <img src="/assets/images/facebook.png">
-       </div>
-       <div class="col-lg-8 cleaning top">
-       <a href="#" class="footer-section-title">faccebook/factus</a>
-       </div>
+    <div  class="footer-distributed">
+    <div class="footer-right">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
       </div>
-      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
-       <div class="col-lg-4">
-       <img src="/assets/images/twitter.png">
-       </div>
-       <div class="col-lg-8 cleaning top">
-       <a href="#" class="footer-section-title">twitter/factus</a>
-       </div>
+
+      <div class="footer-left">
+
+        <p>Copyright© - 2015 Todos los Derechos Reservados - Desarrollado por <a href="http://www.complexless.com" target="_blank">Complexless</a></p>
       </div>
-      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
-       <div class="col-lg-4">
-       <img src="/assets/images/github.png">
-       </div>
-       <div class="col-lg-8 cleaning top">
-       <a href="#" class="footer-section-title">github/factus</a>
-       </div>
-      </div>
-      <div class="col-lg-3 col-sm-3 col-xs-6 centro cleaning">
-       <div class="col-lg-4">
-       <img src="/assets/images/factus.png">
-       </div>
-       <div class="col-lg-8 cleaning top">
-       <a href="#" class="footer-section-title">Factus</a>
-       </div>
-      </div>
-    </div>
+   </div> 
    </div> 
 </footer>
  

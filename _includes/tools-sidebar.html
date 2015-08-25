@@ -1,22 +1,12 @@
-<div class="page-sidebar">
+<div class="page-sidebar" style="border-bottom: 1px solid rgb(175, 190, 213);">
   <div class="page-info">
-    <h1>
-      <p class="page-filters-title">Documentaci&oacute;n Factus</p>
-    </h1>
-    <div>
-      <input aria-labelledby="label-search-data" class="label-search" type="text" placeholder="Buscar"/>
-    </div>
-    <div>
-      <a class="btn-factus btn" href="paso-1" title="Descarga Factus">Descargar</a>
-      <p>Para Windows</p>
-    </div>
   </div>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
     <li class="page-filters-title">Comencemos</li>
       <li>
-        <a href="/docs" class="category-inner" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Como funciona
+        <a href="/" class="category-inner" aria-hidden="true" tabindex="-1">
+        <img src="/assets/images/arrow.png"/> 
+        Como funciona
         </a>
       </li>
     {% assign starting = site.posts | where:'category', 'starting' | sort : 'order'%}
@@ -28,15 +18,10 @@
         </a>
       </li>
     {% endfor %}
-      <li>
-        <a href="/docs/videos/" class="category-inner" aria-hidden="true" tabindex="-1">
-          <img src="/assets/images/arrow.png"/>
-          Videos
-        </a>
-      </li>
+      
   </ul>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
-    <li class="page-filters-title">Aplicaciones Desktop</li>
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
+    <li class="page-filters-title">Configuración</li>
     {% assign desktop = site.posts | where: 'category', 'desktop' | sort: 'order' %}
     
     {% for desktop_post in desktop %}
@@ -48,8 +33,9 @@
       </li>
     {% endfor %}
   </ul>
-  <ul class="page-filters" role="presentation" aria-hidden="true">
-    <li class="page-filters-title">Aplicaciones Web</li>
+  </ul>
+  <ul class="page-filters" role="presentation" aria-hidden="true" id="nav">
+    <li class="page-filters-title">Funcionalidades</li>
     {% assign web = site.posts | where: 'category', 'web' | sort: 'order' %}
     
     {% for web_post in web %}
@@ -62,3 +48,26 @@
     {% endfor %}
   </ul>
 </div>
+<!--<script type="text/javascript">
+$('#nav li a').click(function() {
+  $('.active').removeClass('active');
+  $(this).addClass('active');
+});
+
+  $('#nav a').click(function(e){
+    e.preventDefault();
+    
+    if (!$(this).parents('a').hasClass('active')){
+      
+      $('#nav li a').removeClass('active');
+      $(this).parents('a').addClass('active');
+      
+    
+  };
+  
+});
+
+  $('#nav li a').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+});
+</script>-->

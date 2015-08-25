@@ -38,17 +38,12 @@
       <div class="cols-12">
         <div class="col col-12">
           <div class="col-inner">
-            <a href="http://pijamasurf.com/"><img class="top-logo" src="/assets/images/logo.png"></a>
+            <a href="http://fatcafacil.com/"><img class="top-logo" src="/assets/images/logo.png"></a>
             <div class="nav-burguer" aria-hidden="true"><span></span></div>
             <ul class="site-navigation" aria-label="Navegación principal" role="navigation">
-              {% assign sorted_pages = site.pages | where:'showInNavbar',true | sort: 'weight' %}
-              {% for section in sorted_pages %}
-                {% if section.title %}
-                  <li>
-                    <a class="page-link{% if section.url == page.url %} active{% endif %}" href="{{ section.url | prepend: site.baseurl }}" aria-label="{{ section.aria_label }}">{{ section.title }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
+              <li>
+                <a class="page-link{% if section.url == page.url %} active{% endif %}" href="/">Documentaci&oacute;n</a>
+              </li>
             </ul>
           </div>
         </div>
