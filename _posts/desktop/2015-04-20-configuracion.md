@@ -33,7 +33,7 @@ En esta pantalla nos muestra un formulario para la creación de nuestro usuario 
 Luego al terminar de registrarnos, iniciamos sesion con el usuario que hemos creado y damos clic en "Entrar"
 
 <div class="cleaning img-top code">
-  <img src="/assets/images/25.png">
+  <img src="/assets/images/05.png">
 </div>
 
 Al entrar nos mostrará como configurar FatcaFácil , seguiremos los pasos que nos dicta el tour para configurar correctamente nuestro aplicativo :
