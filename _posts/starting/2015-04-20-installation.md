@@ -14,9 +14,9 @@ category_info:
   title: Instalación
 ---
 
-<h1 class="down">Instalación FatcaFácil 1.5</h1>
+<h1 class="down">Instalación FatcaFácil 2.9</h1>
 
-La instalacion es rápida y fácil , abrimos el ejecutable "FatcaFacil-1.5" 
+La instalacion es rápida y fácil , abrimos el ejecutable "FatcaFacil-2.9" 
 Nos aparecera la siguiente pantalla, damos clic en siguiente.
 
 <div class="cleaning img-top code">
@@ -39,7 +39,7 @@ Clic en siguiente, esperamos a que termine de instalar y listo! , FatcaFacil ya 
 Terminada la instalacion estos son los archivos de inicio: 
 <ul class="distancia">
 <li><b>Documentacion Facta:</b> URL que lo redirigira a la documentación</li>
-<li><b>FatcaFácil:</b> Aplicativo FatcaFacil 1.5</li>
+<li><b>FatcaFácil:</b> Aplicativo FatcaFacil 2.9</li>
 <li><b>Uninstall FatcaFacil:</b> Desistalador del aplicativo</b></li>
 </ul>
 

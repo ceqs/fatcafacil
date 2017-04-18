@@ -1,21 +1,38 @@
 #Site settings
-title: fatcafacil.com
-email: sales@complexless.com 
+title: factus.pe
+email: sales@factus.pe 
 layout: default.html
 description: > # this means to ignore newlines until "baseurl:"
-  Documentación FatcaFácil.
+  En datos.gob.mx puedes descargar y utilizar libremente datos abiertos
+  que el Gobierno de la República genera y recolecta.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://docs.fatcafacil.com" # the base hostname & protocol for your site
-twitter_username: complexless
-twitter_text: "Documentación de FatcaFacil"
-github_username:  complexless
+url: "http://docs.factus.pe" # the base hostname & protocol for your site
+twitter_username: DatosGobMx
+twitter_text: "Descarga y utiliza libremente datos abiertos que el Gobierno de la República genera y recolecta. @GobRep @DatosGobMx"
+github_username:  mxabierto
 
 # Lista de Colaboradores
 collaborators:
   secretaria_salud:
-    title: "ComplexLess"
-    site: "http://complexless.com"
-    logo_url: ""
+    title: "Secretaria de Salud"
+    site: "http://portal.salud.gob.mx/"
+    logo_url: "logoSALUD_hoz-233x80.png"
+  imco:
+    title: "IMCO"
+    site: "http://imco.org.mx/home/"
+    logo_url: "IMCO_presidencia-205x80.jpg"
+  data4:
+    title: "Data4"
+    site: ""
+    logo_url: "D4_Logo-80x80.png"
+  inegi_facil:
+    title: "INEGI Fácil"
+    site: ""
+    logo_url: "logo_160-80x80.png"
+  cartografica:
+    title: "Cartográfica"
+    site: "http://cartografica.mx/"
+    logo_url: "logo_cartografica-72-57x80.png"
 
 # Build settings
 markdown: kramdown
